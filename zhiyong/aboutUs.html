@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>致庸科技国内领先的金融科技公司！</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="致庸科技的无抵押纯线上消费信贷平台，基于致庸科技大数据对客户信用进行整体评估，并在此基础上提供即时到账的现金贷款。额度大，放款快，操作简单。">
+    <meta name="keywords" content="致庸科技,现金贷,借款,贷款,现金贷官网,现金贷网站,现金贷网站,借款网站,致庸科技官网,致庸科技网站,互联网贷款,致庸科技金融贷款,致庸科技金融官网,贷款app">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="layer.js"></script>
+</head>
+<body>
+<div class="top-box">
+    <div class="top clearfix">
+        <div class="logo"><img style="height: 45px;width: auto" src="images/top_logo.png"></div>
+        <div class="nav clearfix">
+            <a href="index.html">首页</a>
+            <a id="appDown">APP下载</a>
+            <a href="news.html">新闻动态</a>
+            <a class="right active" href="aboutUs.html">关于我们</a>
+        </div>
+    </div>
+</div>
+<div class="bannerBox">
+    <p style="width: 600px;margin: 0 auto;color: #fff;font-size: 44px;padding-top: 100px;letter-spacing: 4px;text-align: center;">北京致庸科技有限公司</p>
+    <p class="info-3"><span>致庸 致简 致凡</span><i class="baixian"></i></p>
+    <div class="info-4">E-mail:  zy@zyteche360.com</div>
+</div>
+<div class="content">
+    <div class="about-nav">
+        <ul class="hoverClass">
+            <li class="active abstract">
+                <img src="//jrstatic.baidu.com/static/portal/platform/images/about-bg_b001d33.png" alt="">
+                <span>公司简介</span>
+            </li>
+            <li class="bottom-border culture">
+                <img src="//jrstatic.baidu.com/static/portal/platform/images/about-bg_b001d33.png" alt="">
+                <span>公司文化</span>
+            </li>
+        </ul>
+    </div>
+    <div class="about-info">
+        <div id="fsg" class="about-intro" style="display: block;padding-top: 60px;">
+            <p>北京致庸科技有限公司是一家服务于广大消费者富有年轻活力的金融科技公司。公司致力于普惠金融，通过金融科技手段，践行于科技普惠理念。企业本着以科技普惠的核心理念，执着于金融创新、科技创新，以互联网+金融+科技的模式给予广大消费者更好、更快、更实用的科技金融服务。公司希望通过互联网科技的手段，让科技金融脱虚向实，为消费升级市场里面注入新鲜血液，使得消费市场更有活力。</p>
+            <img style="width: 70%;height: auto;margin: 0 auto;display: block;margin-top: 15px;" src="images/zhiyong.jpg">
+        </div>
+        <div id="footprint" class="about-footprint" style="display: none;padding-top: 60px;">
+            <div class="footprint-info">
+                <p>“致庸 致简 致凡”，深切切入场景，借助科技之力，为广大用户（广大的消费、企业、公司）提供最便利的金融科技服务。</p>
+                <p>愿景：成为金融科技的领航者</p>
+                <p>使命：金融科技手段助力消费升级，互联经济脱虚向实，更好的服务实体经济</p>
+            </div>
+
+        </div>
+    </div>
+    <!--<div id="allmap"></div>-->
+</div>
+<!--合作机构 end-->
+<div class="foot-box">
+    <div class="foot clearfix">
+        <div class="left">
+            <div class="logo" style="font-size: 22px;color: #aaa;">北京致庸科技有限公司</div>
+            <div class="mail">
+                商务合作：<a href="">zy@zyteche360.com</a><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block5-box" style="background-color: #222328;">
+    <div class="block5">
+        <div class="con2">
+            — Copyright ©2017-2018 致庸科技（北京致庸科技有限公司）版权所有 — 京ICP备0000000号-0<br/>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(document).on('mouseenter mouseout','.hoverClass li',function(e){
+            var theEvent = window.event || e;
+            if(theEvent.type=="mouseover"||theEvent.type=="mouseenter"){
+                $('.hoverClass li').removeClass('active');
+                $(this).addClass('active').siblings('li').removeClass('active');
+                if($(this).index()=='0'){
+                    $("#fsg").css('display','block');
+                    $("#footprint").css('display','none');
+                }else {
+                    $("#fsg").css('display','none');
+                    $("#footprint").css('display','block');
+                }
+            }else {
+                if(!$('.hoverClass li').hasClass('active')){
+                    $(".abstract").addClass('active');
+                }
+            }
+        });
+    })
+</script>
+<script type="text/javascript">
+    $('#appDown').on('click', function () {
+        layer.open({
+            type: 2 //Page层类型
+            ,
+            area: ['720px', '480px']
+            ,
+            title: 'APP下载'
+            ,
+            shade: 0.6 //遮罩透明度
+            ,
+            maxmin: true //允许全屏最小化
+            ,
+            anim: 1 //0-6的动画形式，-1不开启
+            ,
+            content: ['downLoad.html', 'no']
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>借款攻略</title>
+    <script src="https://js.fundebug.cn/fundebug.0.3.4.min.js"
+            apikey="905e96a161affed561b3cbde08a8dc2fb0a490a93fe3885faae76798d445a5ca"></script>
+    <style>
+        body {
+            font: 400 14px/1.5 HelveticaLight, "Helvetica Neue", "Heiti SC", "Microsoft Yahei", tahoma, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        li, ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        a, span, i, input {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            outline: none;
+            border: 0;
+            line-height: normal;
+            background: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #c1c1c1;
+        }
+
+        :-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-ms-clear, ::-ms-reveal {
+            display: none;
+        }
+
+        /*滚动条垂直方向的宽度*/
+        ::-webkit-scrollbar {
+            width: 1px;
+        }
+
+        /* 垂直滚动条的滑动块 */
+        ::-webkit-scrollbar-thumb:vertical {
+            -webkit-box-shadow: inset 0 0 6px rgba(150, 150, 150, 0.3);
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+
+        .clearFlex {
+            clear: both;
+            overflow: hidden;
+            zoom: 0;
+        }
+
+        .dayinji {
+            display: inline-block;
+            float: left;
+            margin-left: 20px;
+            width: 64px;
+            height: 64px;
+            vertical-align: middle;
+        }
+
+        .zhunbei {
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+            height: 60px;
+            line-height: 60px;
+            vertical-align: middle;
+            letter-spacing: 1px;
+        }
+
+        #header {
+            padding: 25px 10px;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #3b8dda;
+        }
+
+        #content {
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+        }
+
+        .age, .IDcard, .phone, .card {
+            float: left;
+            width: 96%;
+            height: 90px;
+            vertical-align: middle;
+            letter-spacing: 1px;
+        }
+        .card{
+            border-bottom: 1px solid #fff;
+        }
+        #content .left {
+            float: left;
+            width: 80%;
+            height: 90px;
+            vertical-align: middle;
+        }
+
+        #content .right {
+            float: right;
+            width: 20%;
+            text-align: center;
+            height: 90px;
+            line-height: 90px;
+        }
+
+        #content .right img {
+            display: none;
+            width: 48px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #content .title {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font-size: 16px;
+            color: #3b8dda;
+            padding-left: 26px;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+
+        #content .contentText {
+            display: block;
+            width: 240px;
+            height: 30px;
+            padding-left: 26px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        #footer {
+            margin-top: 10px;
+            height: 300px;
+            width: 100%;
+            background-color: #fff;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #4f4f4f;
+        }
+
+        .footerTitle {
+            width: 90%;
+            padding-left: 26px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        #footer .left{
+            float: left;
+            width: 25%;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #footer .left img{
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+        }
+        #footer .right{
+            float: right;
+            width: 75%;
+            height: 100%;
+        }
+        #footer .otherCai{
+            float: left;
+            width: 96%;
+            height: 80px;
+        }
+        #footer .otherCai:last-child{
+        }
+        #footer .title{
+            color: #3b8dda;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 18px;
+            margin-bottom: 4px;
+        }
+        #footer .contentText{
+            letter-spacing: 1px;
+        }
+        .mt_20{
+            margin-top: 4px;
+        }
+        @media screen  and (max-width: 320px) {
+            .footerTitle{
+                padding-left: 14px;
+            }
+            #content .title{
+                padding-left: 14px;
+            }
+            #content .contentText{
+                padding-left: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header id="header" class="clearFlex">
+    <img class="dayinji" src="images/dayinji.png">
+    <p class="zhunbei">借款需要准备的材料</p>
+</header>
+<div id="content" class="clearFlex">
+    <div class="age">
+        <div class="left">
+            <p class="title">年龄要求</p>
+            <p class="contentText">年龄需要在22周岁(含)-40周岁(含)之间</p>
+        </div>
+        <div class="right"><img src="images/age.png"></div>
+    </div>
+    <div class="IDcard">
+        <div class="left">
+            <p class="title">二代身份证</p>
+            <p class="contentText">申请人需要具备距有效期6个月以上的本人二代身份证</p>
+        </div>
+        <div class="right"><img src="images/IDcard.png"></div>
+    </div>
+    <div class="phone">
+        <div class="left">
+            <p class="title">实名认证手机号</p>
+            <p class="contentText">申请人本人实名认证手机号</p>
+        </div>
+        <div class="right"><img src="images/phoneNum.png"></div>
+    </div>
+    <div class="card">
+        <div class="left">
+            <p class="title">借记卡</p>
+            <p class="contentText">需具备申请人本人名下的指定一类借记卡</p>
+        </div>
+        <div class="right"><img src="images/card.png"></div>
+    </div>
+</div>
+<footer id="footer" class="clearFlex">
+    <p class="footerTitle">
+        除以上必备的申请条件和补充材料外，以下材料可能会提高您的审核率
+    </p>
+    <div class="otherCai mt_20">
+        <div class="left"><img src="images/zhifubao_icon.png"></div>
+        <div class="right">
+            <p class="title">支付宝账号授权</p>
+            <p class="contentText">拥有支付宝芝麻信用分</p>
+        </div>
+    </div>
+    <div class="otherCai">
+        <div class="left"><img src="images/taobao_icon.png"></div>
+        <div class="right">
+            <p class="title">淘宝账号授权</p>
+            <p class="contentText">拥有淘宝账户,并经常使用</p>
+        </div>
+    </div>
+    <div class="otherCai">
+        <div class="left"><img src="images/jd_icon.png"></div>
+        <div class="right">
+            <p class="title">支付宝账号授权</p>
+            <p class="contentText">拥有京东账户,并经常使用</p>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

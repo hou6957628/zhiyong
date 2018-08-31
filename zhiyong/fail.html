@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>成功页面</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://js.fundebug.cn/fundebug.0.3.4.min.js" apikey="905e96a161affed561b3cbde08a8dc2fb0a490a93fe3885faae76798d445a5ca"></script>
+    <style>
+        body{font:400 14px/1.5 HelveticaLight,"Helvetica Neue","Heiti SC","Microsoft Yahei",tahoma,arial,sans-serif;margin:0;padding:0;background-color: #f5f5f5;}
+        *{margin:0;padding:0}
+        a{text-decoration:none;cursor: pointer;}
+        li,ul{list-style:none;margin:0;padding:0}
+        a,span,i,input {-webkit-tap-highlight-color: transparent;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-appearance: none;outline: none;border: 0;line-height: normal;background: none;}
+        ::-webkit-input-placeholder {color: #c1c1c1;}
+        :-moz-placeholder {color: #c1c1c1;}
+        ::-moz-placeholder {color: #c1c1c1;}
+        ::-ms-clear, ::-ms-reveal{display: none;}
+        .successLogo{
+            display: block;
+            width: 128px;
+            height: 128px;
+            margin: 0 auto;
+            margin-top: 110px;
+            background-size:128px 128px;
+            background-image: url("data:image/png;base64,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");
+        }
+        .title1{
+            display: block;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            color: #000;
+            font-size: 28px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .title2{
+            display: block;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            color: #969696;
+            font-size: 12px;
+            text-align: center;
+        }
+        #successBtn{
+            display: block;
+            width: 80%;
+            height: 50px;
+            margin: 0 auto;
+            background-color: #2C99FC;
+            letter-spacing: 4px;
+            font-size: 18px;
+            color: #ffffff;
+            border: 2px solid #2C99FC;
+            -moz-border-radius: 15px; /* Firefox */
+            -webkit-border-radius: 15px; /* Safari 和 Chrome */
+            border-radius: 15px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<a class="successLogo animated pulse" href="javascript:void(0);"></a>
+<p id="title1" class="title1"></p>
+<p id="title2" class="title2"></p>
+<p class="title3"></p>
+<button id="successBtn" type="button" onclick="goback()">确定</button>
+<script>
+    function goback(){
+        haierMobile.close();
+    }
+</script>
+<script>
+    function parseQueryString(url){
+        var params={};
+        var arr=url.split("?");
+        var arr1=arr[1].split("&");
+        for(var i=0;i<arr1.length;i++){
+            arr2=arr1[i].split('=');
+
+            if(!arr2[1]){
+                params[arr2[0]]='true';
+            }else{
+                if(params[arr2[0]]){
+                    var arr3=[params[arr2[0]]];
+                    arr3.push(arr2[1]);
+                    params[arr2[0]] = arr3;
+                } else {
+                    params[arr2[0]]=decodeURI(arr2[1]);
+                }
+            }
+        }
+        document.getElementById("title1").innerText=params.title_1;
+        document.getElementById("title2").innerText=params.title_2;
+    }
+    var url=window.location.href;
+    parseQueryString(url);
+
+</script>
+</body>
+</html>

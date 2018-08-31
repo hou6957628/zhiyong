@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>订单</title>
+    <script src="https://js.fundebug.cn/fundebug.0.3.4.min.js"
+            apikey="905e96a161affed561b3cbde08a8dc2fb0a490a93fe3885faae76798d445a5ca"></script>
+    <style>
+        body {
+            font: 400 14px/1.5 HelveticaLight, "Helvetica Neue", "Heiti SC", "Microsoft Yahei", tahoma, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            -webkit-overflow-scrolling : touch;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        li, ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        a, span, i, input {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            outline: none;
+            border: 0;
+            line-height: normal;
+            background: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #c1c1c1;
+        }
+
+        :-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-ms-clear, ::-ms-reveal {
+            display: none;
+        }
+
+        .box {
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .child_box {
+            width: 48%;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px 0 0 0;
+            margin: 4px 0;
+            -moz-border-radius: 3px; /* Firefox */
+            -webkit-border-radius: 3px; /* Safari 和 Chrome */
+            border-radius: 3px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+        }
+        .child_box img{
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .child_miao{
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 10px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        .child_price{
+            width: 90%;
+            margin: 0 auto;
+            font-size: 16px;
+            margin-top: 10px;
+            color: #f23030;
+        }
+        .footerContent{
+            width: 98%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            height: 90px;
+            font-size: 13px;
+            color: red;
+            border: 1px solid #ccc;
+        }
+        .footerContent p{
+            width: 92%;
+            font-size: 12px;
+            margin: 0 auto;
+            height: 40px;
+            margin-top: 5px;
+        }
+        .footerContent #btn{
+            display: block;
+            width: 80%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid #0a93f7;
+            color: #ffffff;
+            background-color: #1e87bc;
+            font-size: 14px;
+            letter-spacing: 4px;
+            margin: 0 auto;
+            -moz-border-radius: 5px; /* Firefox */
+            -webkit-border-radius: 5px; /* Safari 和 Chrome */
+            border-radius: 5px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="child_box">
+        <img src="img/jd1000.png">
+        <p class="child_miao">京东E卡经典卡1000面值(实体卡)</p>
+        <p class="child_price">￥1000元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd500.png">
+        <p class="child_miao">京东E卡经典卡500面值(实体卡)</p>
+        <p class="child_price">￥500元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd300.png">
+        <p class="child_miao">京东E卡经典卡300面值(实体卡)</p>
+        <p class="child_price">￥300元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd200.png">
+        <p class="child_miao">京东E卡经典卡200面值(实体卡)</p>
+        <p class="child_price">￥200元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd100.png">
+        <p class="child_miao">京东E卡经典卡100面值(实体卡)</p>
+        <p class="child_price">￥100元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd1000fu.png">
+        <p class="child_miao">京东E卡京东福气卡1000面值(实体卡)</p>
+        <p class="child_price">￥1000元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd1000.png">
+        <p class="child_miao">京东E卡经典卡1000面值(实体卡)</p>
+        <p class="child_price">￥1000元</p>
+    </div>
+    <div class="child_box">
+        <img src="img/jd500.png">
+        <p class="child_miao">京东E卡经典卡500面值(实体卡)</p>
+        <p class="child_price">￥500元</p>
+    </div>
+    <div class="footerContent">
+        <p>用户可凭借自己的额度购买以上产品,入不需要此产品可用于平台折价卖出</p>
+        <a href="javascript:void(0);" id="btn" type="button">折价卖卡</a>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>资费及利率说明</title>
+    <script src="https://js.fundebug.cn/fundebug.0.3.4.min.js"
+            apikey="905e96a161affed561b3cbde08a8dc2fb0a490a93fe3885faae76798d445a5ca"></script>
+    <style>
+        body {
+            font: 400 14px/1.5 HelveticaLight, "Helvetica Neue", "Heiti SC", "Microsoft Yahei", tahoma, arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f6fb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        li, ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        a, span, i, input {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-appearance: none;
+            outline: none;
+            border: 0;
+            line-height: normal;
+            background: none;
+        }
+
+        ::-webkit-input-placeholder {
+            color: #c1c1c1;
+        }
+
+        :-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-moz-placeholder {
+            color: #c1c1c1;
+        }
+
+        ::-ms-clear, ::-ms-reveal {
+            display: none;
+        }
+
+        .successLogo {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            margin-top: 60px;
+            background-size: 80px 80px;
+            background-image: url("./images/jieLogo.png");
+        }
+
+        .title1 {
+            display: block;
+            width: 300px;
+            height: 25px;
+            margin: 0 auto;
+            color: #8c8b90;
+            font-size: 16px;
+            text-align: center;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .title2 {
+            display: inline-block;
+            margin: 0 auto;
+            color: #8c8b90;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .title3 {
+            display: block;
+            width: 300px;
+            height: 20px;
+            margin: 0 auto;
+            color: #b0b0b0;
+            font-size: 12px;
+            text-align: center;
+        }
+        .bottomBox {
+            margin: 10px 0;
+        }
+        .title4{
+            position: relative;
+            width: 96%;
+            border: 1px solid #e5e5e5;
+            margin: 0 auto;
+            -moz-border-radius: 4px; /* Firefox */
+            -webkit-border-radius: 4px; /* Safari 和 Chrome */
+            border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+            margin-top: 15px;
+            padding-bottom: 15px;
+            overflow-y: auto;
+        }
+        .title4 h1{
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            display: block;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            text-align: center;
+            color: #5f5f5f;
+            font-size: 13px;
+            background-color: #f7f6fb;
+        }
+        .title4 .span1 {
+            position: absolute;
+            display: block;
+            top: 25px;
+            left: 0;
+            right: 0;
+            width: 250px;
+            margin: 0 auto;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+        .title4 .content{
+            display: block;
+            width: 88%;
+            margin: 0 auto;
+            margin-top: 50px;
+            font-size:12px;
+            color: #9f9f9f;
+            letter-spacing: 1px;
+            line-height: 20px;
+        }
+        /*滚动条垂直方向的宽度*/
+        ::-webkit-scrollbar
+        {
+            width: 1px;
+        }
+        /* 垂直滚动条的滑动块 */
+        ::-webkit-scrollbar-thumb:vertical {
+            letter-spacing: 1px;
+            -webkit-box-shadow: inset 0 0 6px rgba(150, 150, 150, 0.3);
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+        .succLogo{
+            display: block;
+            width: 97%;
+            height: 100px;
+            line-height: 100px;
+            font-size: 22px;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 5px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background-color: #ee7800;
+            -moz-border-radius: 6px; /* Firefox */
+            -webkit-border-radius: 6px; /* Safari 和 Chrome */
+            border-radius: 6px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+            background: -webkit-linear-gradient(left,#f08519, #eec746); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,#f08519, #eec746); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right,#f08519, #eec746); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right,#f08519, #eec746); /* 标准的语法 */
+        }
+        .edu{
+            display: block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 2px;
+            font-weight: normal;
+            background-color: #204187;
+            font-size: 15px;
+            color: #fff;
+            margin: 10px 0;
+            -moz-border-radius: 0 10px 10px 0; /* Firefox */
+            -webkit-border-radius: 0 10px 10px 0; /* Safari 和 Chrome */
+            border-radius: 0 15px 15px 0; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+            word-break:break-all
+        }
+        .edu_text{
+            line-height: 24px;
+            word-break:break-all
+        }
+    </style>
+</head>
+<body>
+
+<a class="succLogo" href="javascript:void(0);">额度、注意事项</a>
+<div class="title4" style="border: 0;">
+    <h2 class="edu">额度说明</h2>
+    <p class="edu_text">借点儿会根据您提交的基本信息和相应的还款情况给出您的具体额度，最高额度可达10万元。借点儿也会根据您的还款表现，适当的提高相关用户的额度。如用户有恶意拒绝还款，逾期等行为，借点儿有权利上传征信。</p>
+    <h2 class="edu">注意事项</h2>
+    <p class="edu_text">第一，牢记借点儿APP网址:www.zytech360.com。</p>
+    <p class="edu_text">第二，为您的借点设置比较复杂的登录密码。</p>
+    <p class="edu_text">您在密码设置时,最好使用数字和字母混合,不要使用纯数字或者纯字母,且密码长度要在6位以上。</p>
+    <p class="edu_text">第三，注意关注自己的还款日期以防出现逾期情况,影响个人征信</p>
+</div>
+</body>
+</html>
